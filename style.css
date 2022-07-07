@@ -1,0 +1,131 @@
+body {
+  background-color: beige;
+  margin: 0px;
+}
+
+#darkMode {
+  box-sizing: border-box;
+  font-size: 36px;
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#password {
+  box-sizing: border-box;
+  font-size: 36px;
+  font-family: monospace;
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#checkbox {
+  margin-left: 45%;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+#heading {
+  color: black;
+}
+
+.light {
+  transition: 1s;
+  background-color: bisque;
+}
+
+.dark {
+  transition: 1s;
+  background-color: black;
+}
+
+.white {
+  color: white;
+}
+
+/**Counter**/
+
+#counter {
+  font-size: 3rem;
+}
+
+#counterHeading {
+  margin-left: 0px;
+  font-size: 2rem;
+  height: 2rem;
+  background-color: salmon;
+  padding: 0%;
+}
+
+/** Clock **/
+#clock {
+  box-sizing: border-box;
+  font-size: 36px;
+  font-family: monospace;
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.analog {
+  position: relative;
+  width: 40vmin;
+  height: 40vmin;
+  background-color: snow;
+  border: 3px solid black;
+  border-radius: 50%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px #333;
+}
+
+.analog > * {
+  position: absolute;
+  border-radius: 2px;
+  background-color: black;
+}
+
+.analog__hours {
+  width: 0.25rem;
+  height: 25%;
+  transform: rotate(var(--hours, 95deg)) translateY(-50%);
+}
+
+.analog__minutes {
+  width: 0.25rem;
+  height: 48%;
+  transform: rotate(var(--minutes, 135deg)) translateY(-50%);
+}
+
+.analog__seconds {
+  background-color: red;
+  width: 2px;
+  height: 48%;
+  transform: rotate(var(--seconds, 30deg)) translateY(-50%);
+}
+
+.analog__circle {
+  width: 5%;
+  height: 5%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.digi-clock {
+  margin-top: 1rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.digi-clock__dots--hidden {
+  visibility: hidden;
+}
